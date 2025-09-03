@@ -7,6 +7,7 @@ export interface layoutConfig {
     surface?: string | undefined | null;
     darkTheme?: boolean;
     menuMode?: string;
+    fontSize?: string;
 }
 
 interface LayoutState {
@@ -31,7 +32,8 @@ export class LayoutService {
         primary: 'emerald',
         surface: null,
         darkTheme: false,
-        menuMode: 'static'
+        menuMode: 'static',
+        fontSize: '18px'
     };
 
     _state: LayoutState = {
