@@ -22,8 +22,9 @@ export class AppMenu {
             {
                 label: 'Home',
                 items: [
-                    { label: 'Equipe', icon: 'pi pi-fw pi-users', routerLink: ['/team'] },
-                    { label: 'Abas', icon: 'pi pi-fw pi-th-large', routerLink: ['/tabs'] }
+                    { label: 'Introdução', icon: 'pi pi-fw pi-users', routerLink: ['/team'] },
+                    { label: 'Pilares', icon: 'pi pi-fw pi-th-large', routerLink: ['/tabs'] },
+                    { label: 'Quiz', icon: 'pi pi-fw pi-th-large', routerLink: ['/quiz'] }
                 ]
             }
         ];

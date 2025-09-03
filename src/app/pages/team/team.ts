@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
-    selector: 'app-team',
-    standalone: true,
-    imports: [CommonModule],
-    template: `
-        <div class="card">
+  selector: 'app-team',
+  standalone: true,
+  imports: [CommonModule],
+  template: `
+      <div class="card">
             <h1>Bem-vindo ao mini-site Código de Ética para Desenvolvedores!</h1>
             <p [ngStyle]="{'font-size.px': 20, 'text-align':'justify'}">
                Este mini-site interativo foi criado para mostrar como a ética guia decisões na tecnologia. Aqui você descobrirá como escolhas de design, algoritmos e funcionalidades impactam a sociedade, a privacidade dos usuários, a inclusão digital e a clareza dos sistemas. Ao longo do site, vamos apresentar os quatro pilares fundamentais do Código de Ética para Desenvolvedores: Responsabilidade Social, Privacidade, Acessibilidade e Transparência, mostrando cenários e boas práticas que todo desenvolvedor deve seguir para criar tecnologia ética e responsável.
@@ -29,47 +29,42 @@ import { CommonModule } from '@angular/common';
                 <b>Transparência:</b> criar sistemas claros, auditáveis e justos, evitando vieses e discriminações. <br/>Exemplo: algoritmos de seleção de candidatos que explicam os critérios de decisão.
             </p>
             <div class="flex items-center justify-center"><a href="/tabs" [ngStyle]="{'font-size.px': 16, 'text-align': 'center'}" >Saiba mais sobre os pilares »</a></div>
-            
-           <!-- Seção da equipe centralizada -->
-          <div class="flex items-center justify-center min-h-screen">
-            <div class="w-full max-w-6xl">
-              <div class="text-center">
-                <div class="text-900 text-3xl font-medium mb-2">Nossa Equipe</div>
-              
-              </div>
+        </div>
+        <div class="card">
+            <div class="flex items-center justify-center">
+                <div class="w-full max-w-6xl">
+                    <div class="text-center">
+                        <div class="text-900 text-3xl font-medium mb-2">Nossa Equipe</div>
+                    </div>
 
-              <!-- Grid responsiva -->
-              
-                <div class="col-12 md:col-6 lg:col-3 p-3 m-6">
-                  <div class="text-center">
-                    <div class="text-xl font-medium">Bruno Henrique Parente de Carvalho</div>
-                    <a class="text-600 hover:underline" href="mailto:brunoparente22@gmail.com">brunoparente22@gmail.com</a>
-                  </div>
-                </div>
+                    <div class="grid">
 
-                <div class="col-12 md:col-6 lg:col-3 p-3 m-10">
-                  <div class="text-center">
-                    <div class="text-xl font-medium">João Victor Palheta</div>
-                    <a class="text-600 hover:underline" href="mailto:victorpalheta2@gmail.com">victorpalheta2@gmail.com</a>
-                  </div>
-                </div>
+                      <div class="col-12 md:col-1">
+                          <div class="text-center p-3">
+                              <div class="text-xl font-medium">Bruno Henrique Parente de Carvalho</div>
+                              <a class="text-600 hover:underline" href="mailto:brunoparente22@gmail.com">brunoparente22@gmail.com</a>
+                          </div>
+                          <div class="text-center p-3">
+                              <div class="text-xl font-medium">João Victor Palheta</div>
+                              <a class="text-600 hover:underline" href="mailto:victorpalheta2@gmail.com">victorpalheta2@gmail.com</a>
+                          </div>
+                      </div>
 
-                <div class="col-12 md:col-6 lg:col-3 p-3 m-10">
-                  <div class="text-center">
-                    <div class="text-xl font-medium">Luiz Gustavo Silva dos Santos</div>
-                    <a class="text-600 hover:underline" href="mailto:luiz.gusnet@outlook.com">luiz.gusnet@outlook.com</a>
-                  </div>
-                </div>
+                      <div class="col-12 md:col-2">
+                          <div class="text-center p-3">
+                              <div class="text-xl font-medium">Luiz Gustavo Silva dos Santos</div>
+                              <a class="text-600 hover:underline" href="mailto:luiz.gusnet@outlook.com">luiz.gusnet@outlook.com</a>
+                          </div>
+                          <div class="text-center p-3">
+                              <div class="text-xl font-medium">Marcus Matheus Lameira de Araujo</div>
+                              <a class="text-600 hover:underline" href="mailto:mmaraujo1304@gmail.com">mmaraujo1304@gmail.com</a>
+                          </div>
+                      </div>
 
-                <div class="col-12 md:col-6 lg:col-3 p-3 m-10">
-                  <div class="text-center">
-                    <div class="text-xl font-medium">Marcus Matheus Lameira de Araujo</div>
-                    <a class="text-600 hover:underline" href="mailto:mmaraujo1304@gmail.com">mmaraujo1304@gmail.com</a>
+                    </div>
                   </div>
-                
-              </div>
             </div>
-          </div>
+
     `
 })
-export class Team {}
+export class Team { }

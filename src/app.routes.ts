@@ -2,6 +2,7 @@ import { Routes } from '@angular/router';
 import { AppLayout } from './app/layout/component/app.layout';
 import { Team } from './app/pages/team/team';
 import { Tabs } from './app/pages/tabs/tabs';
+import { Quiz } from './app/pages/quiz/quiz';
 
 export const appRoutes: Routes = [
     {
@@ -10,7 +11,8 @@ export const appRoutes: Routes = [
         children: [
             { path: '', redirectTo: 'team', pathMatch: 'full' },
             { path: 'team', component: Team },
-            { path: 'tabs', component: Tabs }
+            { path: 'tabs', component: Tabs },
+            { path: 'quiz', component: Quiz }
         ]
     },
     { path: '**', redirectTo: '' }
