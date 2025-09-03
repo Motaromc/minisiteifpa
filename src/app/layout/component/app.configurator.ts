@@ -9,6 +9,7 @@ import Nora from '@primeuix/themes/nora';
 import { PrimeNG } from 'primeng/config';
 import { SelectButtonModule } from 'primeng/selectbutton';
 import { LayoutService } from '../service/layout.service';
+import { SpeechService } from '../service/speech.service';
 
 const presets = {
     Aura,
@@ -99,6 +100,14 @@ declare type SurfacesType = {
                     size="small">
                 </p-selectbutton>
             </div>
+            <div class="flex gap-2 pt-4">
+                <button type="button" class="p-button p-button-sm" (click)="lerTextoPagina()">
+                    🔊 Ler esta página
+                </button>
+                <button type="button" class="p-button p-button-sm p-button-secondary" (click)="pararLeitura()">
+                    🛑 Parar leitura
+                </button>
+            </div>
         </div>
     `,
     host: {
@@ -111,6 +120,8 @@ export class AppConfigurator {
     config: PrimeNG = inject(PrimeNG);
 
     layoutService: LayoutService = inject(LayoutService);
+
+    speechService = inject(SpeechService);
 
     platformId = inject(PLATFORM_ID);
 
@@ -151,6 +162,22 @@ export class AppConfigurator {
             document.documentElement.style.fontSize = size;
         }
     }
+
+    lerTextoPagina() {
+        const selection = window.getSelection();
+        const texto = selection?.toString();
+
+        if (texto && texto.trim().length > 0) {
+            this.speechService.speak(texto);
+        } else {
+            this.speechService.speak('Nenhum texto selecionado.');
+        }
+    }
+
+    pararLeitura() {
+        this.speechService.stop();
+    }
+
 
     surfaces: SurfacesType[] = [
         {
