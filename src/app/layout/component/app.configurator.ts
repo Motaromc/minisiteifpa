@@ -89,6 +89,16 @@ declare type SurfacesType = {
                 <span class="text-sm text-muted-color font-semibold">Menu Mode</span>
                 <p-selectbutton [ngModel]="menuMode()" (ngModelChange)="onMenuModeChange($event)" [options]="menuModeOptions" [allowEmpty]="false" size="small" />
             </div>
+            <div class="flex flex-col gap-2">
+                <span class="text-sm text-muted-color font-semibold">Font Size</span>
+                <p-selectbutton 
+                    [options]="fontSizeOptions" 
+                    [ngModel]="selectedFontSize()" 
+                    (ngModelChange)="onFontSizeChange($event)" 
+                    [allowEmpty]="false" 
+                    size="small">
+                </p-selectbutton>
+            </div>
         </div>
     `,
     host: {
@@ -115,9 +125,30 @@ export class AppConfigurator {
         { label: 'Overlay', value: 'overlay' }
     ];
 
+    fontSizeOptions = [
+        { label: 'S', value: '16px' },
+        { label: 'M', value: '18px' },
+        { label: 'L', value: '20px' },
+        { label: 'XL', value: '22px' },
+        { label: 'XXL', value: '24px' }
+    ];
+
+    selectedFontSize = signal('18px');
+
     ngOnInit() {
         if (isPlatformBrowser(this.platformId)) {
             this.onPresetChange(this.layoutService.layoutConfig().preset);
+            const savedFontSize = this.layoutService.layoutConfig().fontSize || '18px';
+            this.selectedFontSize.set(savedFontSize);
+            document.documentElement.style.fontSize = savedFontSize;
+        }
+    }
+
+    onFontSizeChange(size: string) {
+        this.selectedFontSize.set(size);
+        this.layoutService.layoutConfig.update((state) => ({ ...state, fontSize: size }));
+        if (isPlatformBrowser(this.platformId)) {
+            document.documentElement.style.fontSize = size;
         }
     }
 

@@ -8,18 +8,18 @@ import { CommonModule } from '@angular/common';
   template: `
       <div class="card">
             <h1>Bem-vindo ao mini-site Código de Ética para Desenvolvedores!</h1>
-            <p [ngStyle]="{'font-size.px': 20, 'text-align':'justify'}">
+            <p [ngStyle]="{ 'text-align':'justify'}">
                Este mini-site interativo foi criado para mostrar como a ética guia decisões na tecnologia. Aqui você descobrirá como escolhas de design, algoritmos e funcionalidades impactam a sociedade, a privacidade dos usuários, a inclusão digital e a clareza dos sistemas. Ao longo do site, vamos apresentar os quatro pilares fundamentais do Código de Ética para Desenvolvedores: Responsabilidade Social, Privacidade, Acessibilidade e Transparência, mostrando cenários e boas práticas que todo desenvolvedor deve seguir para criar tecnologia ética e responsável.
             </p>
             <hr>
             <h2>
                 O que é o Código de Ética para Desenvolvedores?
             </h2>
-            <p [ngStyle]="{'font-size.px': 20, 'text-align':'justify'}">
+            <p [ngStyle]="{'text-align':'justify'}">
                 O Código de Ética para Desenvolvedores orienta a conduta profissional de quem cria software, aplicativos e sistemas digitais, estabelecendo responsabilidades sobre como agir diante de desafios éticos relacionados à tecnologia, à sociedade e aos usuários. Nosso compromisso é desenvolver tecnologia de forma consciente e responsável, guiados pelos seguintes valores: Integridade, Inclusão, Proteção e Impacto Positivo. Cada decisão deve priorizar honestidade, acessibilidade, privacidade, segurança e benefícios sociais, promovendo um futuro mais justo e sustentável.
             </p>
             <h2>Pilares do Código de Ética</h2>
-            <p [ngStyle]="{'font-size.px': 20, 'text-align':'justify'}">
+            <p [ngStyle]="{ 'text-align':'justify'}">
                 <b>Responsabilidade Social:</b> desenvolver software pensando no bem da sociedade e no impacto de cada decisão. <br/>Exemplo: sistemas de IA voltados para educação, saúde ou proteção ambiental.
                 <br/><br/>
                 <b>Privacidade:</b> proteger dados pessoais e garantir que seu uso seja transparente e autorizado. <br/>Exemplo: apps bancários com autenticação biométrica e criptografia de transações.
