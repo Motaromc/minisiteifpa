@@ -28,43 +28,47 @@ import { CommonModule } from '@angular/common';
                 <br/><br/>
                 <b>Transparência:</b> criar sistemas claros, auditáveis e justos, evitando vieses e discriminações. <br/>Exemplo: algoritmos de seleção de candidatos que explicam os critérios de decisão.
             </p>
-            <!--
-            <div class="text-center mb-5">
-                <div class="text-900 text-3xl font-medium mb-3">Nossa Equipe</div>
-                <span class="text-600 font-medium text-xl">Conheça os membros da nossa equipe.</span>
-            </div>
+            
+           <!-- Seção da equipe centralizada -->
+          <div class="flex items-center justify-center min-h-screen">
+            <div class="w-full max-w-6xl">
+              <div class="text-center">
+                <div class="text-900 text-3xl font-medium mb-2">Nossa Equipe</div>
+              
+              </div>
 
-            <div class="grid">
-                <div class="col-12 md:col-6 lg:col-3 p-3">
-                    <div class="text-center">
-                        <img src="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png" alt="Amy Elsner" class="w-9rem h-9rem rounded-full mx-auto mb-3">
-                        <div class="text-xl font-medium">Amy Elsner</div>
-                        <div class="text-600">UI/UX Designer</div>
-                    </div>
+              <!-- Grid responsiva -->
+              
+                <div class="col-12 md:col-6 lg:col-3 p-3 m-6">
+                  <div class="text-center">
+                    <div class="text-xl font-medium">Bruno Henrique Parente de Carvalho</div>
+                    <a class="text-600 hover:underline" href="mailto:brunoparente22@gmail.com">brunoparente22@gmail.com</a>
+                  </div>
                 </div>
-                <div class="col-12 md:col-6 lg:col-3 p-3">
-                    <div class="text-center">
-                        <img src="https://primefaces.org/cdn/primeng/images/demo/avatar/asiyajavayant.png" alt="Asiya Javayant" class="w-9rem h-9rem rounded-full mx-auto mb-3">
-                        <div class="text-xl font-medium">Asiya Javayant</div>
-                        <div class="text-600">Frontend Developer</div>
-                    </div>
+
+                <div class="col-12 md:col-6 lg:col-3 p-3 m-10">
+                  <div class="text-center">
+                    <div class="text-xl font-medium">João Victor Palheta</div>
+                    <a class="text-600 hover:underline" href="mailto:victorpalheta2@gmail.com">victorpalheta2@gmail.com</a>
+                  </div>
                 </div>
-                <div class="col-12 md:col-6 lg:col-3 p-3">
-                    <div class="text-center">
-                        <img src="https://primefaces.org/cdn/primeng/images/demo/avatar/ionibowcher.png" alt="Ioni Bowcher" class="w-9rem h-9rem rounded-full mx-auto mb-3">
-                        <div class="text-xl font-medium">Ioni Bowcher</div>
-                        <div class="text-600">Backend Developer</div>
-                    </div>
+
+                <div class="col-12 md:col-6 lg:col-3 p-3 m-10">
+                  <div class="text-center">
+                    <div class="text-xl font-medium">Luiz Gustavo Silva dos Santos</div>
+                    <a class="text-600 hover:underline" href="mailto:luiz.gusnet@outlook.com">luiz.gusnet@outlook.com</a>
+                  </div>
                 </div>
-                <div class="col-12 md:col-6 lg:col-3 p-3">
-                    <div class="text-center">
-                        <img src="https://primefaces.org/cdn/primeng/images/demo/avatar/xuxuefeng.png" alt="Xuxue Feng" class="w-9rem h-9rem rounded-full mx-auto mb-3">
-                        <div class="text-xl font-medium">Xuxue Feng</div>
-                        <div class="text-600">Project Manager</div>
-                    </div>
-                </div>
-            </div>-->
-        </div>
+
+                <div class="col-12 md:col-6 lg:col-3 p-3 m-10">
+                  <div class="text-center">
+                    <div class="text-xl font-medium">Marcus Matheus Lameira de Araujo</div>
+                    <a class="text-600 hover:underline" href="mailto:mmaraujo1304@gmail.com">mmaraujo1304@gmail.com</a>
+                  </div>
+                
+              </div>
+            </div>
+          </div>
     `
 })
 export class Team {}
